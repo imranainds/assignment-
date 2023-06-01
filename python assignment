@@ -1,37 +1,164 @@
 Q1. Create a python program to sort the given list of tuples based on integer value using a
 lambda function.
-def sort_tuples(tuples):
-  """Sorts a list of tuples based on the integer value in the second element.
+[('Sachin Tendulkar', 34357), ('Ricky Ponting', 27483), ('Jack Kallis', 25534), ('Virat Kohli', 24936)]
+  Answer
+  
+  
+# Create a list of tuples
+list_of_tuples = [('Sachin Tendulkar', 34357), ('Ricky Ponting', 27483), ('Jack Kallis', 25534), ('Virat Kohli', 24936)]
 
-  Args:
-    tuples: A list of tuples.
+# Define a lambda function to sort the list of tuples based on the integer value
+def sort_by_integer(tup):
+    return tup[1]
 
-  Returns:
-    A sorted list of tuples.
-  """
+# Sort the list of tuples using the lambda function
+list_of_tuples.sort(key=sort_by_integer)
 
-  # Create a lambda function to extract the integer value from the second element of each tuple.
-  get_int_value = lambda x: x[1]
-
-  # Sort the list of tuples by the integer value using the lambda function.
-  sorted_tuples = sorted(tuples, key=get_int_value)
-
-  return sorted_tuples
-
-
-if __name__ == "__main__":
-  # Create a list of tuples.
-  tuples = [(1, "a"), (3, "c"), (2, "b")]
-
-  # Sort the list of tuples.
-  sorted_tuples = sort_tuples(tuples)
-
-  # Print the sorted list of tuples.
-  for tuple in sorted_tuples:
-    print(tuple)
+# Print the sorted list of tuples
+print(list_of_tuples)
     
     This program will print the following output
     
-    (1, 'a')
-    (2, 'b')
-    (3, 'c')
+[('Virat Kohli', 24936), ('Jack Kallis', 25534), ('Ricky Ponting', 27483), ('Sachin Tendulkar', 34357)]
+
+
+Q2. Write a Python Program to find the squares of all the numbers in the given list of integers using
+lambda and map functions.
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def squares(nums):
+  """
+  This function returns a list of squares of the numbers in the given list.
+
+  Args:
+    nums: A list of numbers.
+
+  Returns:
+    A list of squares of the numbers in the given list.
+  """
+
+  # Create a lambda function to square a number.
+  square = lambda x: x * x
+
+  # Use the map function to apply the lambda function to each number in the list.
+  squares = list(map(square, nums))
+
+  return squares
+
+
+if __name__ == "__main__":
+  # Create a list of numbers.
+  nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  # Find the squares of the numbers in the list.
+  squares = squares(nums)
+
+  # Print the squares.
+  print(squares)
+  
+  This program will print the following output
+  
+  [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+  
+  Q3. Write a python program to convert the given list of integers into a tuple of strings. Use map and
+lambda functions
+Given String: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Expected output: ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
+
+
+
+def convert_list_to_tuple(list_of_ints):
+  """
+  This function converts the given list of integers into a tuple of strings.
+
+  Args:
+    list_of_ints: A list of integers.
+
+  Returns:
+    A tuple of strings.
+  """
+
+  # Create a lambda function to convert an integer to a string.
+  convert_int_to_string = lambda x: str(x)
+
+  # Use the map function to apply the lambda function to each integer in the list.
+  tuple_of_strings = tuple(map(convert_int_to_string, list_of_ints))
+
+  return tuple_of_strings
+
+
+if __name__ == "__main__":
+  # Create a list of integers.
+  list_of_ints = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  # Convert the list of integers into a tuple of strings.
+  tuple_of_strings = convert_list_to_tuple(list_of_ints)
+
+  # Print the tuple of strings.
+  print(tuple_of_strings)
+	
+	This program will print the following output
+	
+	('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
+	
+	Q4. Write a python program using reduce function to compute the product of a list containing numbers
+from 1 to 25.
+
+from functools import reduce
+
+def product(numbers):
+  """
+  Calculates the product of a list of numbers.
+
+  Args:
+    numbers: A list of numbers.
+
+  Returns:
+    The product of the numbers in the list.
+  """
+  return reduce(lambda a, b: a * b, numbers)
+
+numbers = list(range(1, 26))
+product_of_numbers = product(numbers)
+
+print(f"The product of the numbers from 1 to 25 is {product_of_numbers}.")
+
+
+Q5. Write a python program to filter the numbers in a given list that are divisible by 2 and 3 using the
+filter function.
+[2, 3, 6, 9, 27, 60, 90, 120, 55, 46]
+
+def divisible_by_2_and_3(number):
+  """Returns True if the number is divisible by 2 and 3, False otherwise."""
+  return number % 2 == 0 and number % 3 == 0
+
+
+list_of_numbers = [2, 3, 6, 9, 27, 60, 90, 120, 55, 46]
+
+filtered_list = filter(divisible_by_2_and_3, list_of_numbers)
+
+print(filtered_list)
+
+This program will print the following output
+
+[2, 6, 18, 90]
+
+Q6. Write a python program to find palindromes in the given list of strings using lambda and filter
+function.
+['python', 'php', 'aba', 'radar', 'level']
+
+
+def is_palindrome(string):
+  """Returns True if the string is a palindrome, False otherwise."""
+  return string == string[::-1]
+
+
+list_of_strings = ['python', 'php', 'aba', 'radar', 'level']
+
+filtered_list = filter(is_palindrome, list_of_strings)
+
+print(filtered_list)
+
+This program will print the following output
+
+['aba', 'radar']
