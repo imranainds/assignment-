@@ -1,0 +1,37 @@
+Q1. Create a python program to sort the given list of tuples based on integer value using a
+lambda function.
+def sort_tuples(tuples):
+  """Sorts a list of tuples based on the integer value in the second element.
+
+  Args:
+    tuples: A list of tuples.
+
+  Returns:
+    A sorted list of tuples.
+  """
+
+  # Create a lambda function to extract the integer value from the second element of each tuple.
+  get_int_value = lambda x: x[1]
+
+  # Sort the list of tuples by the integer value using the lambda function.
+  sorted_tuples = sorted(tuples, key=get_int_value)
+
+  return sorted_tuples
+
+
+if __name__ == "__main__":
+  # Create a list of tuples.
+  tuples = [(1, "a"), (3, "c"), (2, "b")]
+
+  # Sort the list of tuples.
+  sorted_tuples = sort_tuples(tuples)
+
+  # Print the sorted list of tuples.
+  for tuple in sorted_tuples:
+    print(tuple)
+    
+    This program will print the following output
+    
+    (1, 'a')
+    (2, 'b')
+    (3, 'c')
