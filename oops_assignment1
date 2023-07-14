@@ -1,0 +1,75 @@
+Q1. Explain Class and Object with Respect to Object-Oriented Programming. Give a suitable example.
+Q2. Name the four pillars of OOPs.
+Q3. Explain why the __init__() function is used. Give a suitable example.
+Q4. Why self is used in OOPs?
+Q5. What is inheritance? Give an example for each type of inheritance.
+
+ANSWER 1---
+In Object-Oriented Programming (OOP), a class is a blueprint for creating objects. It contains all the details about the data and methods that define the characteristics and behaviors of the objects created from it 1.
+
+An object is an instance of a class. It is created by instantiating a class, and it contains the data and methods defined by the class 1.
+
+Here’s an example in Python:
+
+class Bike:
+    name = ""
+    gear = 0
+
+bike1 = Bike()
+bike1.gear = 11
+bike1.name = "Mountain Bike"
+print(f"Name: {bike1.name}, Gears: {bike1.gear}")
+In this example, we define a Bike class with two attributes: name and gear. We then create an object bike1 of the Bike class and assign values to its attributes. Finally, we print the values of the attributes using the object
+
+ANSWER 2--
+The four pillars of Object-Oriented Programming (OOP) are Abstraction, Encapsulation, Inheritance, and Polymorphism 12345.
+
+Abstraction is the process of showing only essential features of an entity/object to the user and hiding other irrelevant information 1.
+Encapsulation is the process of wrapping code and data together into a single unit 3.
+Inheritance is a way of creating a new class for using details of an existing class without modifying it 2.
+Polymorphism allows objects to be treated as a member of their own class, or a member of their parent class.
+
+ANSWER 3
+The __init__() function is a special method in Python classes, called a constructor. It is automatically called when an object of the class is created 1.
+
+The purpose of the __init__() function is to assign values to the object’s properties or to perform other operations that are necessary when the object is being created 1.
+
+Here’s an example:
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+p1 = Person("John", 36)
+print(p1.name)
+print(p1.age)
+In this example, we define a Person class with an __init__() function that takes two arguments: name and age. When we create an object p1 of the Person class, we pass the values "John" and 36 as arguments to the __init__() function. These values are then assigned to the object’s properties
+
+ANSWER -4
+In Python, self is used to represent the instance of a class. By using self, we can access the attributes and methods of the class 1.
+
+The reason we need to use self is because Python does not use special syntax to refer to instance attributes. Instead, it passes the instance to which the method belongs automatically as the first parameter of methods. This makes methods entirely the same as functions, and leaves the actual name to use up to you (although self is the convention) 2.
+
+Here’s an example:
+
+class Cat:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def info(self):
+        print(f"I am a cat. My name is {self.name}. I am {self.age} years old.")
+
+In this example, we define a Cat class with an __init__() function and an info() method. Both of these methods take self as their first parameter. When we create an object of the Cat class and call its info() method, the object itself is passed as the first argument to the method
+
+ANSWER 5 
+ Inheritance is a mechanism of deriving a new class from an existing class. The existing class is called the base class or super class or parent class, and the new class is called the derived class or sub class or child class. The derived class inherits the properties and behaviors of the base class, and can also add new features of its own12.
+
+There are different types of inheritance, depending on how many base classes or derived classes are involved. Some of the common types of inheritance are:
+
+Single inheritance: A derived class inherits from only one base class. For example, class B inherits from class A.
+Multiple inheritance: A derived class inherits from more than one base class. For example, class C inherits from class A and class B. Note that multiple inheritance is not supported in Java, but it is supported in C++123.
+Multilevel inheritance: A derived class inherits from another derived class, forming a chain of inheritance. For example, class B inherits from class A, and class C inherits from class B.
+Hierarchical inheritance: More than one derived class inherits from the same base class. For example, class B and class C both inherit from class A.
+Hybrid inheritance: A combination of two or more types of inheritance. For example, class D inherits from class B and class C, where class B and class C both inherit from class A. This is an example of hybrid inheritance that involves single, multiple and hierarchical inheritance
