@@ -1,0 +1,184 @@
+1. Who developed Python Programming Language?
+
+2. Which type of Programming does Python support?
+
+3. Is Python case sensitive when dealing with identifiers?
+
+4. What is the correct extension of the Python file?
+
+5. Is Python code compiled or interpreted?
+
+6. Name a few blocks of code used to define in Python language?
+
+7. State a character used to give single-line comments in Python?
+
+8. Mention functions which can help us to find the version of python that we are currently working on?
+
+9. Python supports the creation of anonymous functions at runtime, using a construct called
+
+10. What does pip stand for python?
+
+11. Mention a few built-in functions in python?
+
+12. What is the maximum possible length of an identifier in Python?
+
+13. What are the benefits of using Python?
+
+14. How is memory managed in Python?
+
+15. How to install Python on Windows and set path variables?
+
+16. Is indentation required in python?
+ ANSWER - 1
+Guido van Rossum developed the Python programming language in the late 1980s. He was inspired by the ABC programming language,
+which was designed to be easy to read and write. Python is a general-purpose language that is used for a variety of tasks, 
+including web development, data science, and machine learning. It is a popular language among beginners and experienced programmers alike.
+ANSWER 2
+Python supports four main programming paradigms:
+
+Imperative programming is a programming paradigm that focuses on the steps that need to be taken to solve a problem. It is the most common programming paradigm and is used in many different languages, including Python.
+Object-oriented programming is a programming paradigm that focuses on objects and their interactions. Objects are self-contained units of data and code that can interact with each other. Python is a fully object-oriented language, which means that everything in Python is an object.
+Functional programming is a programming paradigm that focuses on the evaluation of mathematical functions. It is a more abstract programming paradigm than imperative or object-oriented programming, but it can be very powerful for certain tasks.
+Procedural programming is a programming paradigm that focuses on the steps that need to be taken to solve a problem. It is similar to imperative programming, but it is less flexible and does not support objects.
+Python is a multi-paradigm language, which means that it can be used to implement any of these programming paradigms. However, it is most commonly used for imperative and object-oriented programming.
+
+ANSWER 3
+
+Yes, Python is case sensitive when dealing with identifiers. This means that the names of variables, functions, classes, and other objects are case-sensitive. For example, the variable my_variable is different from the variable My_variable.
+
+This is because Python identifiers are treated as strings, and strings are case-sensitive in Python. This means that the following code will not work:
+
+Python
+my_variable = 10
+My_variable = 20
+
+print(my_variable)
+# This will print 20
+Use code with caution. Learn more
+To fix this code, we need to make sure that the names of the variables are spelled exactly the same. In this case, we would need to change the name of the variable My_variable to my_variable.
+
+Case sensitivity in Python can be a source of confusion for beginners, but it is important to remember that it is a fundamental part of the language. By understanding how case sensitivity works, you can write more readable and maintainable code.
+ANSWER 4
+
+The correct extension of a Python file is .py. This is the file extension that is used to identify Python files on a computer. When you save a Python file, you should give it the .py extension. This will allow the Python interpreter to recognize the file and run it.
+
+Here are some examples of Python files:
+
+my_script.py
+hello_world.py
+math_functions.py
+If you save a Python file with a different extension, such as .txt or .docx, the Python interpreter will not be able to run it.
+
+It is important to note that there are other file extensions that are associated with Python, such as .pyc, .pyd, and .pyo. These file extensions are used for different purposes, such as storing compiled Python code or storing optimized Python code. However, the .py file extension is the most common file extension for Python files.
+ANSWER 5
+Python code is both compiled and interpreted.
+
+When you run a Python script, the Python interpreter first compiles the code into bytecode. Bytecode is a low-level language that is specific to the Python interpreter. The bytecode is then interpreted by the interpreter, which executes the instructions in the bytecode.
+
+This means that Python code is not fully compiled into machine code before it is run. Instead, it is compiled into bytecode, which is then interpreted by the Python interpreter. This makes Python a hybrid language, as it combines the features of compiled and interpreted languages.
+ ANSWER 6
+Function blocks: Function blocks are used to define functions in Python. A function is a block of code that is executed when it is called. Functions can be used to encapsulate code, making it easier to reuse and debug.
+Class blocks: Class blocks are used to define classes in Python. A class is a blueprint for creating objects. Objects are instances of classes and have the properties and methods defined in the class.
+If-else blocks: If-else blocks are used to control the flow of execution in Python. An if-else block consists of an if statement, an else statement, and optionally an elif statement. The if statement is executed if the condition is met, the else statement is executed if the condition is not met, and the elif statement is executed if the condition in the if statement is not met but the condition in the elif statement is met.
+For loops: For loops are used to iterate over a sequence in Python. A sequence is a collection of objects, such as a list, a tuple, or a string. The for loop iterates over the sequence and executes the code in the loop body for each object in the sequence.
+While loops: While loops are used to iterate over a condition in Python. A while loop executes the code in the loop body as long as the condition is met.
+ANSWER 7
+The character used to give single-line comments in Python is the hash (#). Any text that follows the hash character on a line is ignored by the Python interpreter. This can be used to add notes to your code or to disable parts of your code that you are not currently using.
+ANSWER 8
+There are two main functions that can help you to find the version of Python that you are currently working on:
+
+sys.version
+
+The sys.version function returns a string that contains the version of Python that you are currently working on. The string contains the major, minor, and micro version numbers, as well as the release level and the serial number.
+
+For example, the following code:
+
+Python
+import sys
+
+print(sys.version)
+Use code with caution. Learn more
+will print the following output:
+
+3.10.1 (default, Oct 19 2022, 09:08:34) [GCC 11.2.0]
+platform.python_version()
+
+The platform.python_version() function returns a string that contains the version of Python that you are currently working on. The string contains the major, minor, and micro version numbers, but it does not contain the release level or the serial number.
+
+For example, the following code:
+
+Python
+import platform
+
+print(platform.python_version())
+Use code with caution. Learn more
+will print the following output:
+
+3.10.1
+Both of these functions are useful for finding the version of Python that you are currently working on. However, the sys.version function provides more information, as it includes the release level and the serial number.
+ANSWER 9
+In Python, anonymous functions are created using the lambda keyword. Lambda functions are also known as anonymous functions because they do not have a name. They are often used as inline functions, which means that they are defined and executed in the same place.
+ANSWER 10
+
+The acronym pip stands for Python Installer Package. It is a package manager for Python. Package managers are used to install and manage third-party Python packages. Third-party packages are Python packages that are not included in the standard Python distribution.
+
+Pip is a very popular package manager for Python. It is used by millions of Python developers around the world. Pip is a command-line tool, which means that it is used from the command line. To use pip, you need to open a command prompt or terminal window.
+ANSWER 11
+here are a few built-in functions in Python:
+
+print(): This function is used to print text to the console.
+input(): This function is used to get input from the user.
+len(): This function is used to get the length of a string or a list.
+max(): This function is used to find the maximum value in a list.
+min(): This function is used to find the minimum value in a list.
+sum(): This function is used to find the sum of the elements in a list.
+abs(): This function is used to get the absolute value of a number.
+round(): This function is used to round a number to a specified number of decimal places.
+type(): This function is used to get the type of a variable.
+ANSWER 12
+The maximum possible length of an identifier in Python is 79 characters. This is because identifiers in Python are limited to 79 characters in length. If you try to create an identifier that is longer than 79 characters, the Python interpreter will raise an error.
+
+An identifier is a name that is used to refer to a variable, function, class, or other object in Python. Identifiers must start with a letter or an underscore, and they can contain any combination of letters, numbers, and underscores.
+
+Here are some examples of valid identifiers in Python:
+
+my_variable
+_secret_variable
+my_function
+class_name
+Here are some examples of invalid identifiers in Python:
+
+123_my_variable
+my-variable
+my_variable_with_too_many_characters
+It is important to note that the maximum possible length of an identifier is implementation-specific. This means that the maximum length of an identifier may vary depending on the Python implementation that you are using.
+ANSWER 13
+Python is a popular and powerful programming language that has many benefits for various applications. Some of the benefits of using Python are:
+
+Versatility: Python can be used for a wide range of purposes, such as web development, data analysis, machine learning, automation, scripting, game development, etc. Python also supports multiple programming paradigms, such as object-oriented, procedural, functional, and imperative12.
+Open Source: Python is an open source language, which means that anyone can access its source code, modify it, and contribute to its development. Python also has a large number of third-party modules and libraries that extend its functionality and provide ready-made solutions for common problems12.
+Vibrant Community: Python has a large and active community of developers, users, and enthusiasts who provide support, feedback, and resources for learning and improving the language. Python also has many online platforms, forums, blogs, podcasts, and events where people can share their knowledge and experience with Python13.
+Easy to Learn and Write: Python has a simple and expressive syntax that is easy to read and write. Python also follows the principle of “There should be one-- and preferably only one --obvious way to do it”, which makes the code more consistent and clear. Python also has many built-in features that simplify common tasks, such as data structures, exceptions, iterators, generators, decorators, etc12.
+High-Level Language: Python is a high-level language, which means that it abstracts away many low-level details of the computer system, such as memory management, pointers, etc. This makes Python more user-friendly and portable across different operating systems and platforms2.
+Dynamically Typed Language: Python is a dynamically typed language, which means that it does not require the programmer to declare the types of variables before using them. Instead, Python infers the types of variables at runtime based on their values. This makes Python more flexible and concise2.
+Object-Oriented and Procedural Programming Language: Python supports both object-oriented and procedural programming paradigms. Object-oriented programming allows the programmer to create reusable and modular code by defining classes and objects that encapsulate data and behavior. Procedural programming allows the programmer to execute a sequence of statements that manipulate data2.
+Interpreted Language: Python is an interpreted language, which means that it does not need to be compiled before execution. Instead, Python code is read and executed by an interpreter that translates it into machine instructions on the fly. This makes Python more interactive and convenient for testing and debugging2.
+Ideal for Prototypes: Python is ideal for creating prototypes and proof-of-concepts quickly and easily. Python provides more functionality with less code, which reduces the development time and cost. Python also has many tools and frameworks that facilitate rapid application development (RAD), such as Django, Flask, PyQT, etc13.
+Internet of Things (IoT) Opportunities: Python is a suitable language for developing applications for the Internet of Things (IoT), which refers to the network of physical devices that are connected to the internet and can communicate with each other. Python can be used to program microcontrollers, sensors, actuators, embedded systems, etc., that are part of the IoT ecosystem. Python also has libraries that support various IoT protocols and platforms, such as MQTT, CoAP, AWS IoT Core, Google Cloud IoT Core, etc1
+
+ANSWER 14
+Memory management in Python is handled by Python’s private heap space. The management of this private heap is ensured internally by Python memory manager. The allocation of heap space for Python objects is done by Python memory manager. The core API gives access to some tools for the programmer to code. For instance, gc module provides an interface to the optional garbage collector. It provides the ability to disable the collector, tune the collection frequency, and set debugging options1.
+
+Python uses a portion of the memory for its own purposes and also shares memory with other programs running on the computer. This means that Python has a limited amount of memory it can use2.
+
+ANSWER 15
+To install Python on Windows and set path variables, you can follow these steps:
+
+Download Python from Python.org.
+During installation, check the box to add Python to PATH.
+Alternatively, you can manually add the path to Python in the Environment Variables.
+To do this, right-click on This PC and select Properties.
+Click on Advanced system settings, then click on Environment Variables.
+In the System variables section, select the Path variable and click on Edit.
+Click on New and enter Python’s install directory.
+Restart Command Prompt.
